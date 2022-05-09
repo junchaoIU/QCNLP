@@ -8,5 +8,7 @@
 # description: A Preprocessing & Parsing tool for Chinese Natural Language Processing
 """
 
-from .jiebacut import TextSeg
+from .backward_segment import BackwardSeg
+from .forward_segment import ForwardSeg
+from .longest_segment import LongestSeg
 
