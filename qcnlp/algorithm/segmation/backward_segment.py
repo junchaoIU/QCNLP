@@ -10,7 +10,7 @@
 
 class BackwardSeg(object):
     """
-    分词
+    逆向最长匹配分词
     """
 
     def load_dictionary(self):
@@ -41,7 +41,7 @@ class BackwardSeg(object):
         self.text = None
 
     def __call__(self, text):
-        # 精确模式
+        # 逆向最长匹配分词
         dic = self.load_dictionary()
         # list = jieba.lcut(text, cut_all = False)
         return self.backward_segment(text, dic)

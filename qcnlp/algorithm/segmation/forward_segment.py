@@ -10,7 +10,7 @@
 
 class ForwardSeg(object):
     """
-    分词
+    正向最长匹配分词
     """
 
     def load_dictionary(self):
@@ -40,8 +40,7 @@ class ForwardSeg(object):
         self.text = None
 
     def __call__(self, text):
-        # 精确模式
+        # 正向最长匹配分词
         dic = self.load_dictionary()
-        # list = jieba.lcut(text, cut_all = False)
         return self.forward_segment(text, dic)
 

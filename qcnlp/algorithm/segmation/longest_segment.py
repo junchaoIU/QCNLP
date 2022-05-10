@@ -14,7 +14,7 @@ from .forward_segment import ForwardSeg
 
 class LongestSeg(object):
     """
-    分词
+    双向最长匹配分词
     """
 
     def count_single_char(self, word_list: list):  # 统计单字成词的个数
@@ -48,6 +48,6 @@ class LongestSeg(object):
         self.text = None
 
     def __call__(self, text):
-        # 精确模式
+        # 双向最长匹配分词
         return self.longest_segment(text)
 
