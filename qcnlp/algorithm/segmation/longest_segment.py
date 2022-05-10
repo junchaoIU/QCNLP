@@ -24,7 +24,7 @@ class LongestSeg(object):
         dic = set()
 
         # 按行读取字典文件，每行第一个空格之前的字符串提取出来。
-        for line in open("qcnlp/data/CoreNatureDictionary.txt", "r", encoding="utf8"):
+        for line in open("qcnlp/dictionary/CoreNatureDictionary.txt", "r", encoding="utf8"):
             dic.add(line[0:line.find('	')])
 
         return dic

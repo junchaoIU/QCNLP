@@ -17,7 +17,7 @@ class BackwardSeg(object):
         dic = set()
 
         # 按行读取字典文件，每行第一个空格之前的字符串提取出来。
-        for line in open("qcnlp/data/CoreNatureDictionary.txt", "r", encoding="utf8"):
+        for line in open("qcnlp/dictionary/CoreNatureDictionary.txt", "r", encoding="utf8"):
             dic.add(line[0:line.find('	')])
 
         return dic
@@ -43,6 +43,5 @@ class BackwardSeg(object):
     def __call__(self, text):
         # 逆向最长匹配分词
         dic = self.load_dictionary()
-        # list = jieba.lcut(text, cut_all = False)
         return self.backward_segment(text, dic)
 

@@ -8,4 +8,11 @@
 # description: A Preprocessing & Parsing tool for Chinese Natural Language Processing
 """
 
-from . import segmation
+from .segmation.backward_segment import BackwardSeg
+from .segmation.forward_segment import ForwardSeg
+from .segmation.longest_segment import LongestSeg
+
+
+b_seg = BackwardSeg()
+f_seg = ForwardSeg()
+l_seg = LongestSeg()

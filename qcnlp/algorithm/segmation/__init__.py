@@ -12,3 +12,8 @@ from .backward_segment import BackwardSeg
 from .forward_segment import ForwardSeg
 from .longest_segment import LongestSeg
 
+
+b_seg = BackwardSeg()
+f_seg = ForwardSeg()
+l_seg = LongestSeg()
+
