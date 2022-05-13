@@ -11,3 +11,4 @@ print(b_list)
 l_list = qc.l_seg(text)
 l_list = qc.remove_stopwords(l_list)
 print(l_list)
+
