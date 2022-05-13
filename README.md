@@ -41,7 +41,7 @@ print(qc.__version__)
 |[**去除停用词**](../../wiki/分词-说明文档#去除停用词) | remove_stopwords | 去除停用词 |
 
 
-# 🖥 Package Publish
+## 🖥 Package Publish
 ``` shell
 python setup.py sdist  
 twine upload dist/qcnlp-0.0.1.tar.gz
