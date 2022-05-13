@@ -1,4 +1,5 @@
 import qcnlp as qc
+print(qc.__version__)
 
 text = "一命呜呼，然后上了西天"
 # 正向最长匹配分词
