@@ -12,9 +12,10 @@
     <a href="https://github.com/junchaoIU/QCNLP/pulse" alt="Activity">
         <img src="https://img.shields.io/github/commit-activity/m/junchaoIU/QCNLP?color=blue" /></a>
 </p>
-
-**<big>QCNLP: Preprocessing &amp; Parsing tool for Chinese Natural Language Processing (一个预处理与中文自然语言处理解析工具)</big>**
-
+<p align="center">
+<big>A Preprocessing &amp; Parsing tool for Chinese Natural Language Processing</big>
+<big>一个预处理与中文自然语言处理解析工具</big>
+</p>
 ## 📦 Quick Start（快速使用）
 ```shell
 # install
