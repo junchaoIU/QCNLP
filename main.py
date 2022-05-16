@@ -13,3 +13,8 @@ l_list = qc.l_seg(text)
 l_list = qc.remove_stopwords(l_list)
 print(l_list)
 
+text = "QCNLP，是一个小巧的NLP工具吧？是吧。"
+c_list = qc.sentence_seg(text,'coarse')
+f_list = qc.sentence_seg(text,'fine')
+print(c_list)
+print(f_list)
