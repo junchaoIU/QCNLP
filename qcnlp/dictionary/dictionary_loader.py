@@ -36,3 +36,33 @@ def stopwords_loader():
 
     stopwords_list = list(set(stopwords_list))
     return stopwords_list
+
+def negative_words_loader():
+    """ 加载否定词典 negative_words.txt """
+    negative_words_list = []
+    for line in open(os.path.join(
+        GRAND_DIR_PATH, 'dictionary/negative_words.txt'), "r", encoding="utf8"):
+        negative_words_list.append(line.split('\n')[0])
+    return negative_words_list
+
+def sentiment_adv_words_loader():
+    """ 加载情感副词词典，并附带其对应的情感权重 sentiment_adv_words.txt """
+    sentiment_adv_words_dic = {}
+    for line in open(os.path.join(
+        GRAND_DIR_PATH, 'dictionary/sentiment_adv_words.txt'), "r", encoding="utf8"):
+        key, value = line.split('\t')
+        assert len(line.split('\t')) == 2
+        sentiment_adv_words_dic.update({key: float(value)})
+
+    return sentiment_adv_words_dic
+
+def sentiment_words_loader():
+    """ 加载情感词典，并附带其对应的情感权重 sentiment_words.txt """
+    sentiment_words_dic = {}
+    for line in open(os.path.join(
+        GRAND_DIR_PATH, 'dictionary/sentiment_words.txt'), "r", encoding="utf8"):
+        key, value = line.split('\t')
+        assert len(line.split('\t')) == 2
+        sentiment_words_dic.update({key: float(value)})
+
+    return sentiment_words_dic
