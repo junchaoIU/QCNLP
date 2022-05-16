@@ -11,8 +11,10 @@
 from .segmation.backward_segment import BackwardSeg
 from .segmation.forward_segment import ForwardSeg
 from .segmation.longest_segment import LongestSeg
+from .segmation.sentence_segment import SentenceSeg
 
 
 b_seg = BackwardSeg()
 f_seg = ForwardSeg()
 l_seg = LongestSeg()
+sentence_seg = SentenceSeg()
