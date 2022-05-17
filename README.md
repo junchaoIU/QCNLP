@@ -27,6 +27,8 @@ pip install qcnlp
 # version
 import qcnlp as qc
 print(qc.__version__)
+
+# 1.1.0
 ```
 
 ## ✨ 方法集合
@@ -47,7 +49,7 @@ print(qc.__version__)
 ## 🖥 Package Publish
 ``` shell
 python setup.py sdist  
-twine upload dist/qcnlp-0.0.1.tar.gz
+twine upload dist/qcnlp-1.1.0.tar.gz
 ```
 
 ## 🌸 About Author（关于作者）

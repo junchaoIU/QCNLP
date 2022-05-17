@@ -22,3 +22,8 @@ print(f_list)
 text = "我猜，今天天气不错！"
 sentiment_score = qc.sentiment_dic(text)
 print(sentiment_score)
+
+
+text = "我要学好林黛玉和鲁迅文学~"
+ner_model = qc.NerSearch({"people":["林黛玉","鲁迅"]})
+print(ner_model(text))

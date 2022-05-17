@@ -8,7 +8,7 @@
 # description: A Preprocessing & Parsing tool for Chinese Natural Language Processing
 """
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 
 from qcnlp.algorithm import *
 from qcnlp.dictionary import *

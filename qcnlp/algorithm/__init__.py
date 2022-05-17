@@ -13,6 +13,7 @@ from .segmation.forward_segment import ForwardSeg
 from .segmation.longest_segment import LongestSeg
 from .segmation.sentence_segment import SentenceSeg
 from .sentiment.dic_sentiment import DictionarySentiment
+from .ner.ner_search import NerSearch
 
 
 b_seg = BackwardSeg()
