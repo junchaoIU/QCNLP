@@ -18,3 +18,7 @@ c_list = qc.sentence_seg(text,'coarse')
 f_list = qc.sentence_seg(text,'fine')
 print(c_list)
 print(f_list)
+
+text = "我猜，今天天气不错！"
+sentiment_score = qc.sentiment_dic(text)
+print(sentiment_score)

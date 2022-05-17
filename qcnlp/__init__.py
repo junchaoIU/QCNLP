@@ -13,3 +13,4 @@ __version__ = '1.0.0'
 from qcnlp.algorithm import *
 from qcnlp.dictionary import *
 from qcnlp.data_process import *
+from qcnlp.data_structure import *
