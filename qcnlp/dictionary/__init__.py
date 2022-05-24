@@ -1,2 +1,3 @@
 
 from .dictionary_loader import stopwords_loader
+from .dictionary_loader import core_nature_dictionary_loader

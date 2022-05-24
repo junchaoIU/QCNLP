@@ -13,6 +13,17 @@ import os
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 GRAND_DIR_PATH = os.path.dirname(DIR_PATH)
 
+def core_nature_dictionary_loader():
+    """ 加载分词词典
+    """
+    dic = set()
+
+    # 按行读取字典文件，每行第一个空格之前的字符串提取出来。
+    for line in open(os.path.join(GRAND_DIR_PATH, 'dictionary/CoreNatureDictionary.txt'), "r", encoding="utf8"):
+        dic.add(line[0:line.find('	')])
+
+    return dic
+
 def stopwords_loader():
     """ 加载停用词典
     中文停用词表	cn_stopwords.txt

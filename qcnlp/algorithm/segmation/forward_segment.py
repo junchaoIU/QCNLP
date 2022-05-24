@@ -7,19 +7,14 @@
 # github: https://github.com/junchaoIU/QCNLP
 # description: A Preprocessing & Parsing tool for Chinese Natural Language Processing
 """
-
+from qcnlp.dictionary.dictionary_loader import core_nature_dictionary_loader
 class ForwardSeg(object):
     """
     正向最长匹配分词
     """
 
     def load_dictionary(self):
-        dic = set()
-
-        # 按行读取字典文件，每行第一个空格之前的字符串提取出来。
-        for line in open("qcnlp/dictionary/CoreNatureDictionary.txt", "r", encoding="utf8"):
-            dic.add(line[0:line.find('	')])
-
+        dic = core_nature_dictionary_loader()
         return dic
 
     def forward_segment(self,text, dic):
