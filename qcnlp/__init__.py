@@ -14,3 +14,4 @@ from qcnlp.algorithm import *
 from qcnlp.dictionary import *
 from qcnlp.data_process import *
 from qcnlp.data_structure import *
+from qcnlp.word_embedding import *

@@ -37,8 +37,9 @@ class TrieTree(object):
             if depth > self.depth:
                 self.depth = depth
             if 'type' in tree and tree['type'] != typing:
-                print('ERROR!!! `{}` belongs to both `{}` and `{}`.'.format(
-                        word, tree['type'], typing))
+                # print('ERROR!!! `{}` belongs to both `{}` and `{}`.'.format(
+                #         word, tree['type'], typing))
+                pass
             else:
                 tree['type'] = typing
 
