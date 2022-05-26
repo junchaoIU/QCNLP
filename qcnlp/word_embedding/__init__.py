@@ -10,6 +10,8 @@
 
 from .word2vec import Word2vecModel
 from .bertvec import BertvecModel
+from .bagvec import BagvecModel
 
 word2vec_model = Word2vecModel()
 bertvec_model = BertvecModel()
+bagvec_model = BagvecModel()
