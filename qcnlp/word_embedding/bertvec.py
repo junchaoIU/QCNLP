@@ -21,7 +21,7 @@ GRAND_DIR_PATH = os.path.dirname(DIR_PATH)
 class BertvecModel():
 
     def __init__(self):
-        self.embedding_model = tf.saved_model.load("E:\gitHome\github\QCNLP\qcnlp\word_embedding\BERT-Model")
+        self.embedding_model = tf.saved_model.load(os.path.join(GRAND_DIR_PATH, 'word_embedding\BERT-Model'))
 
     def tf_cosine_distance(tensor1, tensor2):
         """

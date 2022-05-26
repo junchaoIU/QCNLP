@@ -35,7 +35,7 @@ print(qc.__version__)
 # print(model.wv.key_to_index)
 
 model = qc.bertvec_model()
-sentence1 = tf.constant(["我来爱你"])
+sentence1 = tf.constant(["我爱你"])
 sentence2 = tf.constant(["我喜欢你"])
 word_vec1 = model(sentence1)
 word_vec2 = model(sentence2)
