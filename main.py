@@ -1,4 +1,6 @@
 import qcnlp as qc
+import tensorflow as tf
+
 print(qc.__version__)
 #
 # text = "一命呜呼，然后上了西天"
@@ -28,6 +30,14 @@ print(qc.__version__)
 # ner_model = qc.NerSearch({"people":["林黛玉","鲁迅"]})
 # print(ner_model(text))
 
-data_file = "qcnlp/test_data/Testdata.txt"
-model = qc.word2vec_model(data_file)
-print(model.wv.key_to_index)
+# data_file = "qcnlp/test_data/Testdata.txt"
+# model = qc.word2vec_model(data_file)
+# print(model.wv.key_to_index)
+
+model = qc.bertvec_model()
+sentence1 = tf.constant(["我来爱你"])
+sentence2 = tf.constant(["我喜欢你"])
+word_vec1 = model(sentence1)
+word_vec2 = model(sentence2)
+print(word_vec1)
+print(qc.BertvecModel.tf_cosine_distance(word_vec1, word_vec2))
