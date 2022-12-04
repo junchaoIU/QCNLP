@@ -20,7 +20,8 @@
 ## 📦 Quick Start（快速使用）
 ```shell
 # install
-pip install qcnlp
+git clone https://github.com/junchaoIU/QCNLP.git
+cd QCNLP
 ```
 
 ```shell
